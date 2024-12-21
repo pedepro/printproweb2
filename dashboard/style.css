@@ -1,0 +1,261 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.cobrancaslayaut {
+        max-width: 600px;
+        padding: 20px;
+        margin-left: 20px;
+}
+
+.dashboard-container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #1877f2;
+}
+
+.info-box {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.info-box h2 {
+    color: #1877f2;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#subscription-invoice {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #1877f2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#subscription-invoice:hover {
+    background-color: #155db2;
+}
+
+/* Estilos para os botões */
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-action {
+    background-color: #1877F2; /* Azul estilo Facebook */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-action:hover {
+    background-color: #145DB2;
+}
+
+.btn-danger {
+    background-color: #FF4D4F; /* Vermelho para o botão de cancelar */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #D9363E;
+}
+
+/* Estilo para o container das cobranças */
+#charges-container {
+    margin-top: 20px;
+    max-height: 270px; /* Limita a altura do container */
+    overflow-y: auto; /* Adiciona barra de rolagem se o conteúdo ultrapassar */
+    padding-right: 10px; /* Evita que a barra de rolagem sobreponha o conteúdo */
+}
+
+/* Adiciona um estilo para os itens dentro do container, se necessário */
+#charges-container .charge-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.charge-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.charge-item p {
+    margin: 5px 0;
+}
+
+.view-invoice-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.view-invoice-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+}
+
+.close-popup {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-popup:hover {
+    background-color: darkred;
+}
+
+
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+}
+
+button.copy-btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.copy-btn:hover {
+    background-color: #0056b3;
+}
+
+.postman-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.postman-link a:hover {
+    text-decoration: underline;
+}
+
+.app-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.app-link a:hover {
+    text-decoration: underline;
+}
+
+.texto1 {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Azul primário */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}

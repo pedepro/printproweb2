@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Print App</title>
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Bem-vindo ao Dashboard</h1>
+        <div id="user-info" class="info-box">
+            <h2>Dados do Usuário</h2>
+            <p><strong>Nome:</strong> <span id="user-name"></span></p>
+            <p><strong>E-mail:</strong> <span id="user-email"></span></p>
+            <p><strong>Telefone:</strong> <span id="user-phone"></span></p>
+            <p><strong>CPF:</strong> <span id="user-cpf"></span></p>
+            <p><strong>ID da Assinatura:</strong> <span id="user-assinatura"></span></p>
+        </div>
+
+        <div id="subscription-info">
+            <h3>Detalhes da Assinatura</h3>
+            <p><strong>Descrição:</strong> <span id="subscription-description">Carregando...</span></p>
+            <p><strong>Valor:</strong> R$ <span id="subscription-value">Carregando...</span></p>
+            <p><strong>Status:</strong> <span id="subscription-status">Carregando...</span></p>
+            <p><strong>Data de Vencimento:</strong> <span id="subscription-due-date">Carregando...</span></p>
+            <div class="button-container">
+                <button id="view-charges-btn" class="btn-action">Ver Cobranças</button>
+                <button id="cancel-subscription-btn" class="btn-danger">Cancelar assinatura</button>
+            </div>
+        </div>
+        <div class="postman-link">
+            <a href="https://www.postman.com/zapnerd/printpro" target="_blank">Ver chamadas no Postman</a>
+        </div>
+        <div class="app-link">
+            <a href="https://printpro-52239.bubbleapps.io/version-test" target="_blank">app de testes</a>
+        </div>
+        <div class="app-link">
+            <a href="https://print.pedepro.com.br" target="_blank">baixar software</a>
+        </div>
+    </div>
+    <div class="cobrancaslayaut">
+        <div id="charges-container"></div>
+        <div class="container">
+            <div class="texto1">Atenção!, as chamadas de impressão e ver lista de impressoras só funcionarão se sua assinatura estiver ativa!, recarregue a pagina para obter atualizações.</div>
+            <div class="input-container">
+                <label for="printer-url">URL para buscar impressoras:</label>
+                <div class="input-wrapper">
+                    <input type="text" id="printer-url" value="https://n8n.zapnerd.cloud/webhook/printers" readonly />
+                    <button class="copy-btn" onclick="copyText('printer-url')">🔗</button>
+                </div>
+            </div>
+        
+            <div class="input-container">
+                <label for="print-url">URL para Imprimir HTML:</label>
+                <div class="input-wrapper">
+                    <input type="text" id="print-url" value="https://n8n.zapnerd.cloud/webhook/printhtml" readonly />
+                    <button class="copy-btn" onclick="copyText('print-url')">🔗</button>
+                </div>
+            </div>
+        
+            <div class="input-container">
+                <label for="print-token">Token:</label>
+                <div class="input-wrapper">
+                    <input type="text" id="print-token" value="print-token-here" readonly />
+                    <button class="copy-btn" onclick="copyText('print-token')">🔗</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

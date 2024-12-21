@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assine o Plano - Print App</title>
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Assine o Plano Start</h1>
+        <p>Plano escolhido: <strong>Plano Start</strong><br>Uso ilimitado, 20 reais por mês.</p>
+        
+        <form id="subscription-form">
+            <!-- Nome e Telefone na mesma linha -->
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                </div>
+                
+                <div class="form-group half-width">
+                    <label for="phone">Telefone</label>
+                    <input type="text" id="phone" name="phone" placeholder="Seu telefone" required>
+                </div>
+            </div>
+
+            <!-- CPF e E-mail na mesma linha -->
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                </div>
+
+                <div class="form-group half-width">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="Seu CPF" required maxlength="14" oninput="mascaraCPF(this)">
+                </div>
+            </div>
+
+            <!-- Senha -->
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Crie uma senha" required>
+                </div>
+            </div>
+
+            <button type="submit" class="subscribe-btn">Assinar</button>
+        </form>
+        <p class="register-link">
+            Já tem uma conta? <a href="#" id="register-link">Efetue login aqui!</a>
+        </p>
+        
+        <footer>
+            <p>&copy; 2024 Print App. Todos os direitos reservados. <br> <a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

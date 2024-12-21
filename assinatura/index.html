@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos de Software de Impressão Automática</title>
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Escolha o Plano Ideal para Você</h1>
+            <p>Facilite suas impressões com nossos planos exclusivos.</p>
+        </header>
+
+        <div class="plans-container">
+            <div class="plan-card" id="start-plan">
+                <h2>Plano Start</h2>
+                <div class="price">R$ 20/mês</div>
+                <ul class="features">
+                    <li>Uso ilimitado</li>
+                    <li>Computadores ilimitados</li>
+                    <li>Marca Printpro</li>
+                    <li>Impressão automática de HTML, PDF e Imagem</li>
+                </ul>
+                <button class="subscribe-btn" onclick="subscribe('start')">Assinar</button>
+                <p class="register-link">
+                    Já tem uma conta? <a href="#" id="register-link">Efetue login aqui!</a>
+                </p>
+            </div>
+
+            <div class="plan-card" id="mysoftware-plan">
+                <h2>Plano My Software</h2>
+                <div class="price">R$ 999,00 (Pagamento único)</div>
+                <ul class="features">
+                    <li>Uso ilimitado</li>
+                    <li>Computadores ilimitados</li>
+                    <li>Marca personalizada</li>
+                    <li>Páginas personalizadas</li>
+                </ul>
+                <button class="contact-btn" onclick="contactSales()">Falar com a equipe de vendas</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
