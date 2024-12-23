@@ -1,6 +1,8 @@
 function subscribe() {
-    alert("Obrigado por assinar o PrintPro! Comece a usar agora mesmo.");
+    // Navega até a seção de planos
+    window.location.href = "/assinatura";
 }
+
 
 function sendMessage(event) {
     event.preventDefault();
