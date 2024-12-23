@@ -1,93 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baixar Instalador - Print App</title>
-    <link rel="icon" type="image/x-icon" href="icon.ico">
-
-    <style>
-        /* Fonte e cores do Facebook */
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #e9eff1;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #1d2129;
-        }
-
-        .container {
-            text-align: center;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            padding: 40px;
-            width: 100%;
-            max-width: 400px;
-        }
-
-        h1 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: #1877f2;
-        }
-
-        p {
-            font-size: 16px;
-            color: #555555;
-            margin-bottom: 30px;
-        }
-
-        .download-btn {
-            background-color: #1877f2;
-            color: white;
-            font-size: 18px;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-
-        .download-btn:hover {
-            background-color: #165e99;
-        }
-
-        footer {
-            margin-top: 30px;
-            font-size: 12px;
-            color: #777777;
-        }
-
-        footer a {
-            color: #1877f2;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="PrintPro - Automação de impressão global. Por apenas R$20/mês, envie ordens de impressão de qualquer lugar do mundo. Suporte a HTML, PDF, imagens e muito mais!">
+        <meta name="keywords" content="PrintPro, impressão automática, impressão online, software de impressão, impressora global, envio de impressão, automação de impressão">
+        <meta name="author" content="PrintPro">
+        <title>PrintPro - Automação de Impressão</title>
+        <link rel="icon" type="image/x-icon" href="icon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                "name": "PrintPro",
+                "description": "Automação de impressão global com suporte a HTML, PDF e muito mais.",
+                "applicationCategory": "UtilityApplication",
+                "operatingSystem": "Windows, Mac, Linux",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "20.00",
+                    "priceCurrency": "BRL"
+                }
+            }
+            </script>
+            
+    </head>
+    
 <body>
+    <header>
+        <div class="header-container">
+            <h1>PrintPro</h1>
+            <p>Sua solução para impressão global e automatizada</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#features">Funcionalidades</a></li>
+            <li><a href="#plans">Planos</a></li>
+            <li><a href="#testimonials">Depoimentos</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="features" class="section">
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li>Uso ilimitado em múltiplos computadores.</li>
+                <li>Envie ordens de impressão de qualquer lugar do mundo.</li>
+                <li>Suporte para HTML, PDF, imagens, recibos e muito mais!</li>
+                <li>Compatível com todos os modelos de impressora.</li>
+            </ul>
+        </section>
 
-    <div class="container">
-        <h1>Baixe o Instalador</h1>
-        <p>Clique no botão abaixo para baixar o instalador do Print pro e começar a usar o aplicativo.</p>
-        <a href="https://n8n-owncloud.6a7cul.easypanel.host/s/QOrKUklxKG6WK5O/download" class="download-btn" download>
-            Baixar Instalador
-        </a>
+        <section id="plans" class="section">
+            <h2>Planos</h2>
+            <div class="plan-card">
+                <h3>Básico</h3>
+                <p>R$20/mês</p>
+                <p>Uso ilimitado para múltiplos computadores.</p>
+                <button onclick="subscribe()">Assine Já</button>
+            </div>
+        </section>
 
-        <footer>
-            <p>&copy; 2024 Print App. Todos os direitos reservados. <br> <a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
-        </footer>
-    </div>
+        <section id="testimonials" class="section">
+            <h2>Depoimentos</h2>
+            <div class="testimonial">
+                <p>"PrintPro transformou minha empresa! A praticidade é incrível."</p>
+                <span>- João Silva</span>
+            </div>
+            <div class="testimonial">
+                <p>"Finalmente encontrei uma solução acessível e funcional."</p>
+                <span>- Maria Oliveira</span>
+            </div>
+        </section>
 
+        <section id="contact" class="section">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco pelo WhatsApp para dúvidas ou suporte:</p>
+            <a href="https://wa.me/00000000000" class="whatsapp-link" target="_blank">Fale conosco no WhatsApp</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PrintPro - Impressões sem fronteiras.</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://print.pedepro.com.br/sitemap.xml
